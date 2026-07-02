@@ -6,6 +6,22 @@ using static UnityEditor.AssetDatabase;
 
 namespace GJSetup.Editor
 {
+    // Common
+    // ↑
+    // Data
+    // ↑
+    // Core
+    // ↑
+    // Gameplay
+    // ↑
+    // View
+    
+    // Common → depends on almost nothing.
+    // Data → may use Common.
+    // Core → may use Common and Data. Engine-level systems/managers.
+    // Gameplay → may use Core, Data, and Common.
+    // View → may use everything to display information, but the other layers shouldn't depend on View.
+    
     public static class FolderSetup
     {
         [MenuItem("Tools/Setup/Create Default Folders",priority = 1)]
@@ -14,7 +30,7 @@ namespace GJSetup.Editor
             CreateFolders("_Project", 
                 "Resources/Scenes",
                 "Resources/Scenes/Game",
-                "Resources/Scenes/UI",
+                "Resources/Scenes/Screens",
                 "Resources/Prefabs",
                 "Resources/Textures",
                 "Resources/Materials",
@@ -22,11 +38,29 @@ namespace GJSetup.Editor
                 "Resources/Audio",
                 "Resources/Audio/Sfx",
                 "Resources/Audio/Bgm",
-                "Scripts/Main",
-                "Scripts/Main/Entities",
-                "Scripts/Main/Events",
-                "Scripts/Main/Events/Structs",
-                "Scripts/Main/Events/Scriptables"
+                "Scripts/Game",
+                "Scripts/Game/Common",
+                "Scripts/Game/Common/Enums",
+                "Scripts/Game/Common/Structs",
+                "Scripts/Game/Common/Interface",
+                "Scripts/Game/Core",
+                "Scripts/Game/Core/PersistentManagers",
+                "Scripts/Game/Data",
+                "Scripts/Game/View",
+                "Scripts/Game/Gameplay",
+                "Scripts/Game/Gameplay/Events",
+                "Scripts/Game/Gameplay/Events/Structs",
+                "Scripts/Game/Gameplay/Events/Scriptables",
+                "Scripts/Game/Gameplay/Controllers",
+                "Scripts/Game/Gameplay/Factory",
+                "Scripts/Game/Gameplay/Systems",
+                "Scripts/Game/Gameplay/Managers",
+                "Scripts/Tests"
+                // "Scripts/Main",
+                // "Scripts/Main/Entities",
+                // "Scripts/Main/Events",
+                // "Scripts/Main/Events/Structs",
+                // "Scripts/Main/Events/Scriptables"
                 );
             //MoveFolder("_Project/Resources", "Settings");
             Refresh();

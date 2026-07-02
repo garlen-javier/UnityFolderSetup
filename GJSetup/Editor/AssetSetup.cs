@@ -127,7 +127,20 @@ namespace GJSetup.Editor
             ImportAsset("Feel.unitypackage", "More Mountains/ScriptingEffects");
         }
         
-        [MenuItem(DefaultMenuItem + "Paid/Helper/Animancer Pro v8",priority = 8)]
+        [MenuItem(DefaultMenuItem + "Paid/Helper/Advanced FPS Counter",priority = 8)]
+        
+        public static void ImportAdvancedFPSCounter()
+        {
+            ImportAsset("Advanced FPS Counter.unitypackage", "Code Stage/Editor ExtensionsUtilities");
+        }
+        
+        [MenuItem(DefaultMenuItem + "Paid/Helper/Quantum Console")]
+        public static void ImportAdvancedQuantumConsole()
+        {
+            ImportAsset("Advanced FPS Counter.unitypackage", "QFSW/Editor ExtensionsUtilities");
+        }
+        
+        [MenuItem(DefaultMenuItem + "Paid/Helper/Animancer Pro v8")]
         public static void ImportAnimancerProV8()
         {
             ImportAsset("Animancer Pro v8.unitypackage", "Kybernetik/ScriptingAnimation");
@@ -163,10 +176,22 @@ namespace GJSetup.Editor
             ImportAsset("Amplify Shader Editor.unitypackage", "Amplify Creations/Editor ExtensionsVisual Scripting");
         }
         
+        [MenuItem(DefaultMenuItem + "Paid/Shader/Amplify/Amplify ShaderPack")]
+        public static void ImportAmplifyShaderPack()
+        {
+            ImportAsset("Amplify Shader Pack.unitypackage", "Amplify Creations/Shaders");
+        }
+        
         [MenuItem(DefaultMenuItem + "Paid/Shader/Amplify/Amplify Impostors")]
         public static void ImportAmplifyImpostors()
         {
             ImportAsset("Amplify Impostors.unitypackage", "Amplify Creations/Editor ExtensionsUtilities");
+        }
+        
+        [MenuItem(DefaultMenuItem + "Paid/Shader/Amplify/Amplify Bloom")]
+        public static void ImportAmplifyBloom()
+        {
+            ImportAsset("Amplify Bloom.unitypackage", "Amplify Creations/ShadersFullscreen Camera Effects");
         }
         
         [MenuItem(DefaultMenuItem + "Paid/Shader/Amplify/Amplify LUT Pack")]
@@ -217,6 +242,12 @@ namespace GJSetup.Editor
             ImportAsset("Lowpoly Shader.unitypackage", "Amazing ssets/Shaders");
         }
         
+        [MenuItem(DefaultMenuItem + "Paid/Shader/All In 1 Shader Nodes")]
+        public static void ImportAllIn1ShaderNodes()
+        {
+            ImportAsset("All In 1 Shader Nodes.unitypackage", "Seaside Studios/Shaders");
+        }
+        
         [MenuItem(DefaultMenuItem + "Paid/Shader/Mystify FX")]
         public static void ImportMystifyFX()
         {
@@ -231,6 +262,24 @@ namespace GJSetup.Editor
         public static void ImportCartoonFX4Remaster()
         {
             ImportAsset("Cartoon FX 4 Remaster.unitypackage", "Jean Moreno/Particle Systems");
+        }
+        
+        [MenuItem(DefaultMenuItem + "Paid/VFX/VFX Graph - Mega Pack - Vol. 4")]
+        public static void ImportVFXGraphMegaPackVol4()
+        {
+            ImportAsset("VFX Graph - Mega Pack - Vol 4.unitypackage", "Gabriel Aguiar Prod/VFX");
+        }
+        
+        [MenuItem(DefaultMenuItem + "Paid/VFX/Unique Projectiles Vol. 3")]
+        public static void ImportUniqueProjectilesVol3()
+        {
+            ImportAsset("Unique Projectiles Vol 3.unitypackage", "Gabriel Aguiar Prod/Particle Systems");
+        }
+        
+        [MenuItem(DefaultMenuItem + "Paid/VFX/Casual RPG VFX")]
+        public static void ImportCasualRPGVFX()
+        {
+            ImportAsset("Casual RPG VFX.unitypackage", "Lana Studio/Particle Systems");
         }
         
         [MenuItem(DefaultMenuItem + "Paid/VFX/Sci-Fi Arsenal")]
