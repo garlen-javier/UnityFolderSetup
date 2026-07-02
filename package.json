@@ -1,8 +1,8 @@
 {
 	"name":"com.garlenjavier.tools",
 	"version":"1.2.1",
-	"displayName":"GarlenTools",
-	"description": "Garlen Javier Personal Tool for Unity Project Setup",
+	"displayName":"Garlen Project Setup",
+	"description": "Garlen Javier Personal Unity Project Setup",
 	"author": {
 		"name": "Garlen Javier",
 		"url": "https://garlen-javier.github.io/portfolio/contact"
